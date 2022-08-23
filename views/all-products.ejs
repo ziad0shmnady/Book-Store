@@ -1,0 +1,37 @@
+<%- include('include/header') %>
+    <%- include('include/navbar') %>
+
+        <% if(arr.length==0){ %>
+            <h1>Not found Book</h1>
+            <% } %>
+                <div class="content container d-flex  justify-content-center align-items-center ">
+                    <div class="cards container pt-5 pb-5">
+                        <div class="row">
+                            <% for(var i=0; i < arr.length; i++) { %>
+                                <div class="col-lg-3 col-md-6">
+                                    <a style="color: black;" class=" text-decoration-none" href="/details/<%= arr[i]._id %>">
+                                        <div class="card" style="width: 18rem;">
+                                            <img style="width:100% ;height:300px" src="<%= arr[i].image %>  "
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-decoration-none fw-bold text-center">
+                                                    <%= arr[i].name %>
+                                                </h5>
+                                                <!-- <p style="min-height: 170px; max-height:180px;  " class="card-text">
+                                                
+                                            </p> -->
+                                                <a href="/details/<%= arr[i]._id %> "
+                                                    class="btn btn-dark m-auto d-block">
+                                                    More Details
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+                                <% } %>
+                                    </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <%- include('include/footer') %>

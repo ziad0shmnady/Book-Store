@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: open sans;
+  transition: ease 0.5s;
+  text-decoration: none;
+}
+
+body {
+  background: #eef2f9;
+}
+
+.product-card {
+  background: white;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: #dbe2ee 0 0 20px 5px;
+  display: flex;
+  gap: 30px;
+  color: #191847;
+}
+
+.cover-image {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+}
+img:hover {
+  transform: scale(1.05);
+}
+.more-image-container {
+  display: flex;
+}
+.more-image {
+  width: 100px;
+}
+.image-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.free-shipping {
+  display: inline-block;
+  background: #191847;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
+}
+
+.product-name {
+  margin: 10px 0 20px 0;
+  font-size: 22px;
+}
+
+.regular-price {
+  text-decoration: line-through;
+}
+
+.discount-price {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.offer-info {
+  font-size: 14px;
+  color: gray;
+}
+
+.add-to-cart {
+  display: inline-block;
+  width: 100%;
+  background: #212529;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: #e2e9f3 0 5px;
+  margin: 20px 0;
+}
+.add-to-cart ion-icon {
+  font-size: 30px;
+  margin-bottom: -8px;
+}
+.add-to-cart:hover {
+  background: #e2e9f3;
+  box-shadow: #212529 0 5px;
+  color: #212529;
+}
+.add-to-cart:hover ion-icon {
+  transform: rotate(360deg);
+}
+.stock {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.stock-status {
+  width: 14px;
+  height: 14px;
+  background: #00d98b;
+  border-radius: 50%;
+}
+.stock-info {
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button {
+  width: 200px;
+  color: #191847;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding: 15px;
+  border: solid #dfe6f0 2px;
+  border-radius: 10px;
+}
+.button ion-icon {
+  font-size: 30px;
+  margin-bottom: -7px;
+}
+.button:hover {
+  box-shadow: #e2e9f3 0 0 10px;
+}
+.button:hover ion-icon {
+  transform: rotate(360deg);
+}
+
+.logo {
+  width: 150px;
+}
+ul li a:hover {
+  color: black !important;
+  border-radius: 20px !important; 
+  background-color: orange !important;  
+}

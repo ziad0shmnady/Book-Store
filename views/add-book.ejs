@@ -1,0 +1,26 @@
+<%- include('include/header') %>
+<%- include('include/navbar') %>
+<form action="/addBook" method="POST">
+    <div class="mb-3">
+        <label for="exampleInputtext2" class="form-label">Name</label>
+        <input type="text" class="form-control" id="exampleInputtext2" name="name">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputtext3" class="form-label">Auther</label>
+        <input type="text" class="form-control" id="exampleInputtext3" name="auther">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputtext4" class="form-label">Description</label>
+        <input type="text" class="form-control" id="exampleInputtext4" name="description">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputtext5" class="form-label">Price</label>
+        <input type="text" class="form-control" id="exampleInputtext5" name="price">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputtext6" class="form-label">Image Url</label>
+        <input type="text" class="form-control" id="exampleInputtext6" name="image">
+    </div>
+    <button type="submit" class="btn btn-dark ms-auto">Submit</button>
+</form>
+<%- include('include/footer') %>
