@@ -9,7 +9,7 @@ url = 'mongodb+srv://Ziad:012440123@cluster0.plyz0.mongodb.net/bookStore'
 
 const port = process.env.PORT || 5000
 mongoose.connect(url).then(() => {
-    console.log('Connected To DataBase')
+    console.log(`Connected To DataBase with ${port}`)
 }).then(() => {
     app.listen(port)
 }).catch(err => { console.log(err) })
