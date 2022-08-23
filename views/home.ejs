@@ -1,48 +1,5 @@
 <%- include('include/header') %>
     <%- include('include/navbar') %>
 
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                ...
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js%22%3E"></script>
-            <script>
-                const swiper = new Swiper(".swiper", {
-                    // Navigation arrows
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
-                    keyboard: {
-                        enabled: true,
-                        onlyInViewport: false,
-                    },
-                    breakpoints: {
-                        // when window width is <= 499px
-                        499: {
-                            slidesPerView: 3,
-                            spaceBetweenSlides: 3,
-                            slidesPerGroup: 3,
-                        },
-                        // when window width is <= 999px
-                        999: {
-                            slidesPerView: 5,
-                            spaceBetweenSlides: 50,
-                            slidesPerGroup: 5,
-                        },
-                    },
-                });
-            </script>
+      <h1> Welcome Page</h1>
             <%- include('include/footer') %>
