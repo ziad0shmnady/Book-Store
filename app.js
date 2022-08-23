@@ -2,12 +2,16 @@ const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const router =require('./routes/book-routes')
+require('dotenv').config()
+
 const app = express()
-url = 'mongodb+srv://Ziad:012440123@cluster0.plyz0.mongodb.net/bookStore?retryWrites=true&w=majority'
+url = 'mongodb+srv://Ziad:012440123@cluster0.plyz0.mongodb.net/bookStore'
+
+const port = process.env.PORT || 5000
 mongoose.connect(url).then(() => {
     console.log('Connected To DataBase')
 }).then(() => {
-    app.listen(5000)
+    app.listen(port)
 }).catch(err => { console.log(err) })
 
 app.set('view engine', 'ejs')
